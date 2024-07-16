@@ -23,9 +23,7 @@ function drawCanvas(num) {
 
 function hoverColor(elm) {
   elm.target.classList.add("hovered");
-  //   console.log("called");
 
-  //   elm.target.style.opacity = elm.target.style.opacity + 0.2;
   elm.target.style.opacity = parseFloat(elm.target.style.opacity) + 0.1;
 }
 
