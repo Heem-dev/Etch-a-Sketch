@@ -15,6 +15,7 @@ function drawCanvas(num) {
 
     squareClone.style.width = `${squareWidth}px`;
     squareClone.style.height = `${squareHeight}px`;
+    squareClone.style.opacity = 0.1;
     squareClone.addEventListener("mouseover", (e) => hoverColor(e));
     contianer.appendChild(squareClone);
   }
@@ -23,6 +24,9 @@ function drawCanvas(num) {
 function hoverColor(elm) {
   elm.target.classList.add("hovered");
   //   console.log("called");
+
+  //   elm.target.style.opacity = elm.target.style.opacity + 0.2;
+  elm.target.style.opacity = parseFloat(elm.target.style.opacity) + 0.1;
 }
 
 const resetBtn = document.querySelector(".resetBtn");
